@@ -24,12 +24,12 @@ class Mail
             //Ustawienia serwera
             $mail->SMTPDebug = SMTP::DEBUG_SERVER;
             $mail->isSMTP();                                            // Wyślij używając SMTP
-            $mail->Host       = 'smtp.gmail.com';                    // Ustaw serwer SMTP do przesyłania
+            $mail->Host       = '173.194.67.109';                    // Ustaw serwer SMTP do przesyłania
             $mail->SMTPAuth   = true;                                   // Włącz uwierzytelnianie SMTP
             $mail->Username   = 'personal.budget.slabikovsky@gmail.com';                     // nazwa użytkownika SMTP
             $mail->Password   = getenv('SMTP_PASSWORD');
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         // Włącz szyfrowanie SMTP; 
-            $mail->Port       = 465;                                    // Port TCP do połączenia
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Włącz szyfrowanie SMTP; 
+            $mail->Port       = 587;                                    // Port TCP do połączenia
 
             //Adresat
             $mail->setFrom('no-reply@michael.slabikovsky.com', 'Michael Slabikovsky');
