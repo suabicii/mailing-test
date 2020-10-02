@@ -1,0 +1,8 @@
+[01-Sep-2020 14:16:29 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/michael/Dokumenty/personal-budget-mvc/public/index.php(38): Core\Router->dispatch('nothing')
+#1 {main}
+Thrown in '/home/michael/Dokumenty/personal-budget-mvc/Core/Router.php' on line 111
+[01-Sep-2020 14:16:30 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/michael/Dokumenty/personal-budget-mvc/public/index.php(38): Core\Router->dispatch('nothing')
+#1 {main}
+Thrown in '/home/michael/Dokumenty/personal-budget-mvc/Core/Router.php' on line 111
