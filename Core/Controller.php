@@ -2,9 +2,6 @@
 
 namespace Core;
 
-use App\Auth;
-use App\Flash;
-
 abstract class Controller
 {
     /**
@@ -79,18 +76,5 @@ abstract class Controller
     {
         header('Location: https://' . $_SERVER['HTTP_HOST'] . $url, true, 303);
         exit;
-    }
-
-    /**
-     * Żądanie logowania przed wejściem na daną podstronę
-     * 
-     * @return void
-     */
-    public function requireLogin()
-    {
-        if (!Auth::getUser()) {
-            Flash::addMessage('Zaloguj się, aby uzyskać dostęp do danej strony', Flash::INFO);
-            $this->redirect('/');
-        }
     }
 }
